@@ -1,6 +1,5 @@
 <?php
 require 'cfg/config.php';
-//if(loggedin()) redirect('dashboard');
 require 'func/form.php';
 require 'const/rules/email.const.php';
 require 'const/rules/password.const.php';
@@ -17,7 +16,6 @@ if(isset($_POST['register'])) {
 		list($email, $password, $username, $slogan, $description) = FormProcess::expect('email', 'password', 'username', 'slogan', 'description');
 		
 		if($signup->vStr([$username, $email], [UNAME, EMAIL])) {
-			echo "YESSSSSSSSSSSSSSS";
 			#Auf bereits registrierte Email-Adresse oder Nutzernamen prüfen
 			if($stmt = $connect->prepare('SELECT email, username FROM users WHERE email=? OR username=?')) {
 				$stmt->bind_param('ss', $email, $username);
