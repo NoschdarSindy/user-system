@@ -1,0 +1,114 @@
+body {
+	font-family: "Century Gothic", sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background: darkgray;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-top: 0;
+}
+
+ol, ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+#core > * > :not(:last-child), #core > * > * > :not(:last-child) {
+	margin-bottom: 10px;
+}
+
+header, footer {
+	margin: auto;
+	padding: 5px 10px;
+	width: 960px;
+	background: CornflowerBlue;
+}
+
+#heading {
+	font-size: 26px;
+	color: white;
+	text-shadow: 2px 1px black;
+}
+
+#footing {
+	font-size: 10px;
+	color: lightgray;
+}
+
+#core {
+	display: flex;
+	margin: auto;
+    width: 960px;
+	padding: 10px;
+	align-items: flex-start;
+	justify-content: center;
+    background: LightSkyBlue;
+}
+
+main, aside {
+	padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: white; 
+}
+
+main {
+    width: 640px;
+}
+
+aside {
+	margin-left: 10px;
+    width: 266px;
+}
+
+.alert, .info {
+	padding: 5px;
+	border: 1px outset;
+	border-radius: 5px;
+	text-shadow: 2px 1px 1px black;
+	color: white;
+}
+
+.alert {
+	border-color: red;
+	background: linear-gradient(to bottom right, red, #AB0000);
+}
+
+.info {
+	border-color: blue;
+	background: linear-gradient(to bottom right, blue, #0000AB);
+}
+
+#h-main {
+	text-align: center;
+	border-bottom: 2px ridge darkgray;
+}
+
+/* TEST */
+fieldset {
+	padding: 0 5px;
+	border: none;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+	background: WhiteSmoke;
+}
+legend {
+	padding: 0 5px;
+	border: 1px solid darkgray;
+	border-radius: 2px;
+	background: lightblue;
+}
+
+/* TEST */
